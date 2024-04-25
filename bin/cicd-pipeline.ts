@@ -7,3 +7,4 @@ const app = new cdk.App();
 new CicdPipelineStack(app, 'CicdPipelineStack', {
 
 });
+app.synth();

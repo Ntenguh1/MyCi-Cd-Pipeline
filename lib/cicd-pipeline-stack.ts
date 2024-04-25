@@ -13,11 +13,11 @@ export class CicdPipelineStack extends cdk.Stack {
         input: CodePipelineSource.gitHub('Ntenguh1/MyCi-Cd-Pipeline', 'main'),
         commands: [
           'pwd',
-          'cd MyCi-Cd-Pipeline',
+//'cd MyCi-Cd-Pipeline',
           'npm ci',
           'npx cdk synth'
         ],
-        primaryOutputDirectory: 'MyCi-Cd-Pipeline/cdk.out'
+ //       primaryOutputDirectory: 'MyCi-Cd-Pipeline/cdk.out'
     })
       })
     
